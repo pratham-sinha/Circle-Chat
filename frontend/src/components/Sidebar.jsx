@@ -35,7 +35,7 @@ function Sidebar() {
 
     if(areUsersLoading)return <UserSkeleton/>
   return (
-     <aside className=' w-22 lg:w-70 flex flex-col mt-12 border-r border-base-300  '>
+     <aside className=' w-22 lg:w-70 flex flex-col mt-12 border-r border-slate-400 bg-neutral-950  '>
       
 
       
