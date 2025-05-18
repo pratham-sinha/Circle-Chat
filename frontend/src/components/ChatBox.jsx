@@ -5,6 +5,8 @@ import MessageInput from './MessageInput.jsx';
 import { useAuthStore } from '../store/useAuthStore.js';
 import { useChatStore } from '../store/useChatStore.js'
 import {UTC2IST} from '../utils/timeConversion.js'
+import { Download } from 'lucide-react';
+
 
 function ChatBox() {
   
@@ -61,7 +63,7 @@ function ChatBox() {
           }
 
           <div
-          className={`chat ${message.senderId===authUser._id? "chat-end":"chat-start"}`}
+          className={`chat ${message.senderId===authUser._id? "chat-end":"chat-start"} `}
           >
             <div className='chat-image avatar'>
                 <div className='size-10 rounded-full border'>
@@ -72,7 +74,7 @@ function ChatBox() {
             </div>
              
 
-            <div className="chat-header mb-1">
+            <div className="chat-header mb-1 ">
            
 
               <time className="text-xs opacity-50 ml-1">
@@ -85,14 +87,26 @@ function ChatBox() {
                
 
 
-            <div className="chat-bubble flex flex-col">
+            <div className="chat-bubble flex flex-col rounded-3xl text-zinc-900 font-sans font-semibold" style={!message.image ?  { background: 'linear-gradient(90deg, rgba(253,127,137,1) 0%, rgba(255,92,92,1) 50%, rgba(252,175,77,1) 100%)' }:undefined}>
               {message.image && (
+                <>
                 <img
                   src={message.image}
                   alt="Attachment"
-                  className="sm:max-w-[200px] rounded-md mb-2"
-                />
-              )}
+                  className="sm:max-w-[200px] rounded-3xl m-0 p-0"
+                  />
+                  {message.senderId!=authUser._id && <a
+       href={message.image.replace('/upload/', '/upload/fl_attachment/')}
+      download
+      className="absolute bottom-0 right-0  bg-white p-1 rounded-sm opacity-60 text-black hover:bg-gray-800 hover:text-white transition duration-200 hover:scale-105"
+      title="Download image"
+    >
+      <Download className=' transition duration-200'/>
+    </a>
+        }
+                  </>
+              )
+              }
               {message.text && <p>{message.text}</p>}
             </div>
             </div>
