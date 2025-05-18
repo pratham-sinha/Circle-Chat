@@ -104,7 +104,7 @@ const SignUpPage = () => {
 >
 
   {
-    showPassword?
+    !showPassword?
   <KeyRound/>:
   <Eye/>
   }
