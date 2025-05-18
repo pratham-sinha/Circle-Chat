@@ -15,3 +15,15 @@ React-hot-toast and lucide-react for better UI
 Node.js, Express.js  
 MongoDB as database  
 Socket.IO for real time communication  
+
+## Login Page  
+![App Screenshot](./screenshots/Screenshot%202025-05-18%20231815.png)
+
+## Chat Box  
+![App Screenshot](./screenshots/Screenshot%202025-05-18%20232105.png)
+
+## Real Time Chatting  
+![App Screenshot](./screenshots/Screenshot%202025-05-18%20203202.png)
+
+## Profile page with update PFP option
+![App Screenshot](./screenshots/Screenshot%202025-05-18%20232134.png)
