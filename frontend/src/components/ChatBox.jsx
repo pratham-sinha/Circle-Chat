@@ -98,7 +98,7 @@ function ChatBox() {
                   {message.senderId!=authUser._id && <a
        href={message.image.replace('/upload/', '/upload/fl_attachment/')}
       download
-      className="absolute bottom-0 right-0  bg-white p-1 rounded-sm opacity-60 text-black hover:bg-gray-800 hover:text-white transition duration-200 hover:scale-105"
+      className="absolute bottom-0 right-0  bg-white p-1 rounded-sm opacity-60 text-black hover:bg-gray-800 hover:text-white transition duration-200"
       title="Download image"
     >
       <Download className=' transition duration-200'/>
