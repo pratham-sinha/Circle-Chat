@@ -21,7 +21,7 @@ function ChatHeader() {
 
         <div className="flex items-center gap-3">
           {/* Avatar */}
-           <div className="size-10 ">
+           <div className="avatar size-10 rounded-full ">
               <img src={selectedUser?.profilePic || "./src/assets/avatar.png"} alt={"PRATHAM"} className="rounded-full" />
            </div>
           
