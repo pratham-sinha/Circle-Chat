@@ -1,4 +1,5 @@
 # Circle Chat
+[![YouTube](https://img.shields.io/badge/YouTube-Video-red?logo=youtube&logoColor=white)](https://youtu.be/pSqgmCUqfIc)
 
 A real-time chat application that lets users send and receive messages instantly.  
 Built with the MERN stack and socket.io, it provides a fast and modern chatting experience.
